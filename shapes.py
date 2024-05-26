@@ -1,6 +1,6 @@
 import math
 
-class shapes():
+class Shapes():
 
     def calc_area(self):
         pass
@@ -10,7 +10,7 @@ class shapes():
         pass
     
 
-class rectangle(shapes):
+class Rectangle(Shapes):
     def __init__(self, width, height):
         self.width = width
         self.height = height
@@ -21,7 +21,7 @@ class rectangle(shapes):
     def calc_perimeter(self):
         return 2 * (self.width + self.height)
 
-class triangle(shapes):
+class Triangle(Shapes):
     def __init__(self, base, height):
         self.base = base
         self.height = height
@@ -32,7 +32,7 @@ class triangle(shapes):
     def calc_perimeter(self):
         return 3 * self.base
 
-class circle(shapes):
+class Circle(Shapes):
     def __init__(self, radius):
         self.radius = radius
         
